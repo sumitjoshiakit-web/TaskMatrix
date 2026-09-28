@@ -1,5 +1,4 @@
 # TaskMatrix
-# TaskMatrix
 
 > An Agile Project Management Platform for modern teams.
 
@@ -7,48 +6,45 @@
 
 TaskMatrix is an enterprise-oriented Agile Project Management application designed to help teams organize projects, manage tasks, collaborate with team members, and monitor project progress through a centralized workspace.
 
-The application will provide a structured workflow for creating projects, assigning tasks, tracking status, managing priorities, and viewing detailed task information.
+The application is planned around a structured Agile workflow for creating projects, assigning tasks, tracking status, managing priorities, and viewing detailed task information.
 
 ---
 
 ## Project Information
 
-| Field             | Details                    |
-| ----------------- | -------------------------- |
-| Project Name      | TaskMatrix                 |
-| Designated Track  | Agile Project Management   |
-| Project Type      | Enterprise Web Application |
-| Development Phase | Capstone Planning          |
-| Repository        | Public GitHub Repository   |
+| Field | Details |
+| --- | --- |
+| Project Name | TaskMatrix |
+| Designated Track | Agile Project Management |
+| Project Type | Enterprise Web Application |
+| Development Phase | Capstone Planning |
+| Repository | Public GitHub Repository |
 
 ---
 
 ## Tech Stack
 
 ### Frontend
-
-* React.js
-* Vite
-* JavaScript
-* Tailwind CSS
-* Zustand
-* React Router
+- React.js
+- Vite
+- JavaScript
+- Tailwind CSS
+- Zustand
+- React Router
 
 ### Backend
-
-* Node.js
-* Express.js
+- Node.js
+- Express.js
+- REST API
 
 ### Database
+- MongoDB
 
-* MongoDB
-
-### Development & Design Tools
-
-* Git
-* GitHub
-* Figma
-* draw.io
+### Design & Development Tools
+- Git
+- GitHub
+- Figma
+- diagrams.net (draw.io)
 
 ---
 
@@ -58,151 +54,116 @@ The application will provide a structured workflow for creating projects, assign
 
 Modern software teams need a centralized platform to manage projects, tasks, team members, deadlines, priorities, and progress.
 
-Managing these activities across separate tools can make it difficult to maintain a clear view of project progress.
+Managing these activities across separate tools can make it difficult to maintain a clear view of project progress. TaskMatrix is planned as a unified workspace for organizing an Agile workflow from project creation through task completion.
 
-TaskMatrix aims to provide a unified workspace where teams can manage their Agile workflow from project creation to task completion.
-
----
-
-# 2. Target Users
+## 2. Target Users
 
 TaskMatrix is designed for:
+- Project Managers
+- Team Leaders
+- Developers
+- Designers
+- QA Engineers
+- Students working in development teams
+- Small and medium-sized software teams
 
-* Project Managers
-* Team Leaders
-* Developers
-* Designers
-* QA Engineers
-* Students working in development teams
-* Small and medium-sized software teams
+## 3. Core Features
 
----
+### P0 — Mandatory MVP
 
-# 3. Core Features
+**Authentication**
+- User registration
+- User login
+- Logout
+- Protected application routes
+- Basic user profile
 
-## P0 — Mandatory MVP Features
+**Project Management**
+- Create project
+- View projects
+- Update project
+- Delete project
+- Project details
 
-### Authentication
+**Task Management**
+- Create, edit, and delete tasks
+- Assign tasks to team members
+- Set task priority
+- Set task status
+- Set due date
 
-* User registration
-* User login
-* Logout
-* Protected application routes
-* Basic user profile
+**Project Board**
+- Backlog
+- To Do
+- In Progress
+- Review
+- Done
 
-### Project Management
+**Dashboard**
+- Total projects
+- Total tasks
+- Completed tasks
+- Pending tasks
+- Tasks by priority
+- Recent activity
 
-* Create project
-* View projects
-* Update project
-* Delete project
-* Project details
+### P1 — Priority Features
 
-### Task Management
+**Team Management**
+- Add and remove team members
+- View team members
+- Assign tasks to members
 
-* Create task
-* Edit task
-* Delete task
-* Assign task to a team member
-* Set task priority
-* Set task status
-* Set due date
+**Task Details**
+- Title
+- Description
+- Status
+- Priority
+- Assignee
+- Due date
+- Labels
+- Comments
+- Activity history
 
-### Project Board
+**Search & Filtering**
+- Search tasks
+- Filter by status
+- Filter by priority
+- Filter by assignee
+- Sort by due date
 
-Tasks will be organized into workflow columns:
+### P2 — Stretch Features
 
-* Backlog
-* To Do
-* In Progress
-* Review
-* Done
-
-### Dashboard
-
-The dashboard will provide:
-
-* Total projects
-* Total tasks
-* Completed tasks
-* Pending tasks
-* Tasks by priority
-* Recent activity
-
----
-
-# P1 — Priority Features
-
-## Team Management
-
-* Add team members
-* Remove team members
-* View team members
-* Assign tasks to members
-
-## Task Details
-
-Each task will contain:
-
-* Title
-* Description
-* Status
-* Priority
-* Assignee
-* Due date
-* Labels
-* Comments
-* Activity history
-
-## Search and Filtering
-
-Users will be able to:
-
-* Search tasks
-* Filter by status
-* Filter by priority
-* Filter by assignee
-* Sort by due date
-
----
-
-# P2 — Stretch Features
-
-* Drag-and-drop task management
-* Activity timeline
-* Notifications
-* Dark mode
-* Advanced analytics
-* Project progress charts
-* Role-based permissions
-* Real-time collaboration
-* Advanced reporting
+- Drag-and-drop task management
+- Activity timeline
+- Notifications
+- Dark mode
+- Advanced analytics
+- Project progress charts
+- Role-based permissions
+- Real-time collaboration
+- Advanced reporting
 
 ---
 
 # 4. Application Views
 
-The initial application architecture will contain the following major views:
-
 ### Authentication
-
-* Login
-* Register
+- Login
+- Register
 
 ### Main Application
-
-* Dashboard
-* Projects
-* Project Board
-* Team Members
-* Notifications
-* Profile
+- Dashboard
+- Projects
+- Project Board
+- Team Members
+- Notifications
+- Profile
 
 ### Details
-
-* Project Details
-* Task Details
-* User Details
+- Project Details
+- Task Details
+- User Details
 
 ---
 
@@ -228,57 +189,78 @@ Update Status / Priority / Assignee
 Task Completed
 ```
 
----
-
-# 6. Task Status Workflow
+## Task Status Workflow
 
 ```text
-Backlog
-   ↓
-To Do
-   ↓
-In Progress
-   ↓
-Review
-   ↓
-Done
+Backlog → To Do → In Progress → Review → Done
 ```
 
 ---
 
-# 7. Database Collections
+# 6. UI/UX Wireframes
 
-The planned MongoDB collections are:
+The Sprint 13 wireframe set contains four core desktop views:
 
-* users
-* projects
-* tasks
-* comments
-* notifications
+1. Authentication
+2. Dashboard
+3. Project Board
+4. Task Details
 
-### Users
+### Figma Design
 
-Stores user account and profile information.
-
-### Projects
-
-Stores project information and project members.
-
-### Tasks
-
-Stores task information, status, priority, assignee, and project reference.
-
-### Comments
-
-Stores comments associated with tasks.
-
-### Notifications
-
-Stores user-specific system notifications.
+[Open the TaskMatrix Figma Wireframes](https://www.figma.com/design/PMAHqdULAMywdVpkL8mq2k/Untitled?node-id=0-1&t=AN6jbjWv9Agci5P7-1)
 
 ---
 
-# 8. Mock API Endpoints
+# 7. System Architecture
+
+TaskMatrix follows a layered full-stack architecture:
+
+```text
+User
+  ↓
+React + Vite Frontend
+  ↓
+REST API
+  ↓
+Node.js + Express Backend
+  ↓
+Application Services
+  ↓
+MongoDB
+```
+
+The backend is planned as separate services/modules for authentication, projects, tasks, team management, and notifications.
+
+![TaskMatrix System Architecture](docs/architecture/system-architecture.drawio.png)
+
+---
+
+# 8. Database ERD
+
+The planned MongoDB data model contains five primary collections:
+
+- `users`
+- `projects`
+- `tasks`
+- `comments`
+- `notifications`
+
+Important references include:
+
+- `projects.ownerId` → `users._id`
+- `projects.memberIds` → `users._id`
+- `tasks.projectId` → `projects._id`
+- `tasks.assigneeId` → `users._id`
+- `comments.taskId` → `tasks._id`
+- `comments.userId` → `users._id`
+- `notifications.userId` → `users._id`
+
+![TaskMatrix Database ERD](docs/architecture/database-erd.drawio.png)
+
+---
+
+# 9. Mock API Endpoints
 
 ## Authentication
 
@@ -334,197 +316,150 @@ PUT    /api/notifications/:notificationId/read
 
 ---
 
-# 9. Global State Management
+# 10. Frontend State Architecture
 
-Zustand will be used to manage important application-wide state.
-
-Planned stores:
+Zustand is planned for application-wide state management.
 
 ```text
-Global Store
-│
-├── Auth Store
-│   ├── user
-│   ├── isAuthenticated
-│   └── loading
-│
-├── Project Store
-│   ├── projects
-│   ├── activeProject
-│   └── loading
-│
-├── Task Store
-│   ├── tasks
-│   ├── selectedTask
-│   ├── filters
-│   └── loading
-│
-├── Team Store
-│   ├── members
-│   └── selectedMember
-│
-└── UI Store
-    ├── sidebar
-    ├── modal
-    └── theme
+TaskMatrix Application
+        ↓
+Zustand Global Store
+        ├── Auth Store
+        │   ├── Current User
+        │   └── Authentication Status
+        │
+        ├── Project Store
+        │   ├── Projects
+        │   └── Active Project
+        │
+        ├── Task Store
+        │   ├── Tasks
+        │   ├── Selected Task
+        │   └── Task Filters
+        │
+        ├── Team Store
+        │   ├── Team Members
+        │   └── Selected Member
+        │
+        └── UI Store
+            ├── Sidebar State
+            ├── Modal State
+            └── Theme
+```
+
+![TaskMatrix Frontend State Tree](docs/architecture/state-tree.drawio.png)
+
+---
+
+# 11. MongoDB Collection Design
+
+### users
+Stores account and profile information.
+
+```text
+_id, name, email, passwordHash, avatar, createdAt
+```
+
+### projects
+Stores project information and membership.
+
+```text
+_id, name, description, ownerId, memberIds, createdAt
+```
+
+### tasks
+Stores project tasks and workflow information.
+
+```text
+_id, projectId, title, description, status,
+priority, assigneeId, dueDate, createdAt
+```
+
+### comments
+Stores task-level collaboration messages.
+
+```text
+_id, taskId, userId, content, createdAt
+```
+
+### notifications
+Stores user-specific notifications.
+
+```text
+_id, userId, message, type, read, createdAt
 ```
 
 ---
 
-# 10. UI/UX Design
-
-The initial wireframe will contain at least three major views:
-
-### View 1 — Authentication Screen
-
-Contains:
-
-* Application logo
-* Email field
-* Password field
-* Login button
-* Register link
-
-### View 2 — Main Dashboard
-
-Contains:
-
-* Sidebar navigation
-* Top navigation
-* Project summary
-* Task statistics
-* Recent tasks
-* Project progress
-
-### View 3 — Project / Task Details
-
-Contains:
-
-* Project information
-* Task board
-* Task cards
-* Task details panel
-* Assignee
-* Priority
-* Status
-* Comments
-
-Figma Design File:
-
-> Add the public Figma link here after completing the wireframes.
-
----
-
-# 11. System Architecture
-
-The system will follow a layered full-stack architecture:
-
-```text
-User
- ↓
-Frontend Application
- ↓
-API Layer
- ↓
-Backend Services
- ↓
-Database
-```
-
-The frontend will communicate with the backend through REST API endpoints.
-
-The backend will handle authentication, project management, task management, comments, users, and notifications.
-
-MongoDB will store application data using separate collections.
-
----
-
-# 12. State Architecture
-
-The frontend global state will be divided into independent stores:
-
-```text
-Application
-│
-├── Authentication
-├── Projects
-├── Tasks
-├── Team
-└── UI
-```
-
-This structure keeps application state modular and makes the system easier to maintain as the project grows.
-
----
-
-# 13. Planned Architecture Documents
-
-The repository will contain:
+# 12. Architecture Documents
 
 ```text
 docs/
 ├── architecture/
-│   ├── system-architecture.png
-│   └── state-tree.png
+│   ├── system-architecture.drawio.png
+│   ├── database-erd.drawio.png
+│   └── state-tree.drawio.png
 │
 └── wireframes/
-    └── figma-link.txt
+    └── README.md
 ```
 
----
-
-# 14. Development Priorities
-
-| Priority | Area                    | Status  |
-| -------- | ----------------------- | ------- |
-| P0       | Authentication          | Planned |
-| P0       | Project Management      | Planned |
-| P0       | Task Management         | Planned |
-| P0       | Project Board           | Planned |
-| P0       | Dashboard               | Planned |
-| P1       | Team Management         | Planned |
-| P1       | Task Details            | Planned |
-| P1       | Search & Filtering      | Planned |
-| P2       | Drag & Drop             | Planned |
-| P2       | Notifications           | Planned |
-| P2       | Analytics               | Planned |
-| P2       | Real-time Collaboration | Planned |
+The diagrams are maintained as exported PNG documentation for the planning phase.
 
 ---
 
-# 15. Current Sprint Deliverables
+# 13. Development Priorities
 
-* [x] Project selected
-* [x] Repository initialized
-* [x] PRD prepared
-* [ ] Figma wireframes
-* [ ] ERD
-* [ ] Frontend state tree
-* [ ] Architecture diagram
-* [ ] Architecture image added to README
+| Priority | Area | Status |
+| --- | --- | --- |
+| P0 | Authentication | Planned |
+| P0 | Project Management | Planned |
+| P0 | Task Management | Planned |
+| P0 | Project Board | Planned |
+| P0 | Dashboard | Planned |
+| P1 | Team Management | Planned |
+| P1 | Task Details | Planned |
+| P1 | Search & Filtering | Planned |
+| P2 | Drag & Drop | Planned |
+| P2 | Notifications | Planned |
+| P2 | Analytics | Planned |
+| P2 | Real-time Collaboration | Planned |
 
 ---
 
-# 16. Future Development Phases
+# 14. Sprint 13 Deliverables
 
-### Phase 1
+- [x] Project selected — TaskMatrix
+- [x] Repository initialized
+- [x] PRD prepared
+- [x] Figma wireframes planned
+- [x] System architecture diagram
+- [x] Database ERD
+- [x] Frontend state tree
+- [x] Mock API endpoint plan
+- [x] MongoDB collection plan
+- [x] Architecture documentation structure
 
-Build the core MVP.
+---
 
-### Phase 2
+# 15. Future Development Phases
 
-Implement advanced project, team, and task management.
+### Phase 1 — Base MVP
+Build authentication, project management, task management, dashboard, and project board.
 
-### Phase 3
+### Phase 2 — Priority Features
+Implement team management, detailed task views, search, filtering, and collaboration features.
 
-Add optimization, analytics, notifications, and collaboration features.
+### Phase 3 — Optimization & Stretch Features
+Add analytics, notifications, drag-and-drop workflows, permissions, and real-time capabilities.
 
-### Phase 4
-
-Testing, deployment, performance optimization, and documentation.
+### Phase 4 — Quality & Deployment
+Testing, security review, performance optimization, deployment, monitoring, and documentation.
 
 ---
 
 ## Project Status
 
-**Planning & Architecture Phase**
+**Planning & Architecture Phase — Sprint 13**
+
+The current phase focuses on product requirements, UI/UX wireframes, system architecture, database design, API planning, and frontend state architecture.
