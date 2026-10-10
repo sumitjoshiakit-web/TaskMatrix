@@ -256,7 +256,7 @@ Important references include:
 - `comments.userId` → `users._id`
 - `notifications.userId` → `users._id`
 
-![TaskMatrix Database ERD](docs/architecture/database-erd.drawio.png)
+![TaskMatrix Database ERD](docs/architecture/_database-erd.drawio.png)
 
 ---
 
@@ -347,7 +347,7 @@ Zustand Global Store
             └── Theme
 ```
 
-![TaskMatrix Frontend State Tree](docs/architecture/state-tree.drawio.png)
+![TaskMatrix Frontend State Tree](docs/architecture/_state-tree.drawio.png)
 
 ---
 
