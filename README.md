@@ -2,6 +2,8 @@
 
 > An Agile Project Management Platform for modern teams.
 
+> **Submission repository name required by the brief:** `prodesk-capstone-TaskMatrix`. The current GitHub repository is still named `TaskMatrix`; rename it in GitHub repository Settings before submitting so the repository-name requirement is actually met.
+
 ## Project Overview
 
 TaskMatrix is a planning-stage blueprint for an Agile Project Management platform that helps teams organize projects, manage tasks, collaborate with team members, and monitor project progress from one workspace.
@@ -18,7 +20,9 @@ This repository documents the product requirements, prioritized MVP scope, four 
 | Designated Track | Agile Project Management |
 | Project Type | Enterprise Web Application |
 | Development Phase | Capstone Planning |
-| Repository | Public GitHub Repository |
+| Required Repository Name | `prodesk-capstone-TaskMatrix` |
+| Current Repository URL | [sumitjoshiakit-web/TaskMatrix](https://github.com/sumitjoshiakit-web/TaskMatrix) — rename still required |
+| Repository Visibility | Public |
 
 ---
 
@@ -437,19 +441,31 @@ These are exported PNG assets for the planning deliverable; editable draw.io sou
 
 ---
 
-# 14. Sprint 13 Deliverables
+# 14. Sprint 13 Deliverables and Rubric Mapping
 
-- [x] Project selected — TaskMatrix
-- [x] Repository initialized
-- [x] PRD prepared
-- [x] Figma wireframes designed (four core desktop views)
+| Requirement | Evidence | Status |
+| --- | --- | --- |
+| Phase 1 / P0: Public GitHub repository named `prodesk-capstone-[ProjectName]` | This repo is public, but its current name is `TaskMatrix`; required final name is `prodesk-capstone-TaskMatrix`. | **Action required: rename repository** |
+| Phase 1 / P0: README PRD with Project Name | Project Information table above. | Complete |
+| Phase 1 / P0: Designated Track | `Agile Project Management` in Project Information. | Complete |
+| Phase 1 / P0: Tech Stack | Frontend, Backend, Database, and Design & Development Tools sections. | Complete |
+| Phase 1 / P0: Prioritized core features | P0, P1, and P2 feature lists in Section 3. | Complete |
+| Phase 2 / P1: At least 3 core viewports in Figma | Four 1440 × 900 frames: Authentication, Dashboard, Project Board, Task Details. | Designed; evaluator access must be checked |
+| Phase 2 / P1: Public Figma link in README | Figma link in Section 6 and `docs/wireframes/README.md`. | Link included; confirm sharing is set to anyone with link can view |
+| Phase 3 / P2: Stretch integrations | Optional features listed in Section 3. | Optional; not required for minimum submission |
+
+### Deliverable inventory
+
+- [x] PRD and prioritized P0/P1/P2 scope
+- [x] Figma wireframes for four core views
 - [x] System architecture diagram
 - [x] Database ERD
 - [x] Frontend state tree
-- [x] Mock API endpoint plan
+- [x] Proposed REST API endpoint plan
 - [x] MongoDB collection plan
-- [x] Architecture documentation structure
 - [x] README image paths checked against repository filenames
+- [ ] Rename repository to `prodesk-capstone-TaskMatrix`
+- [ ] Verify Figma sharing: anyone with the link can view
 
 ---
 
@@ -505,7 +521,8 @@ The following criteria define when the planned P0 MVP should be considered funct
 - [x] MVP acceptance criteria and key architecture assumptions
 - [x] README image paths match the committed asset filenames
 - [ ] Confirm the Figma file is accessible to the evaluator without requesting access
-- [ ] If the assignment rubric requires an exact repository name, confirm the repository name matches it
+- [ ] Rename the GitHub repository to `prodesk-capstone-TaskMatrix` and verify the new URL
+- [ ] Confirm Figma sharing is set to anyone with the link can view
 
 ## Project Status
 
