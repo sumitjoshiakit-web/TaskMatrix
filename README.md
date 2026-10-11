@@ -41,6 +41,8 @@ This repository documents the product requirements, prioritized MVP scope, four 
 - Express.js
 - REST API
 
+### Database
+-MongoDB
 
 ### Design & Development Tools
 - Git
