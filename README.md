@@ -21,7 +21,7 @@ This repository documents the product requirements, prioritized MVP scope, four 
 | Project Type | Enterprise Web Application |
 | Development Phase | Capstone Planning |
 | Required Repository Name | `prodesk-capstone-TaskMatrix` |
-| Current Repository URL | [sumitjoshiakit-web/TaskMatrix](https://github.com/sumitjoshiakit-web/TaskMatrix) — rename still required |
+| Current Repository URL | (https://github.com/sumitjoshiakit-web/TaskMatrix) 
 | Repository Visibility | Public |
 
 ---
@@ -41,8 +41,6 @@ This repository documents the product requirements, prioritized MVP scope, four 
 - Express.js
 - REST API
 
-### Database
-- MongoDB
 
 ### Design & Development Tools
 - Git
@@ -213,9 +211,7 @@ The Sprint 13 Figma file contains four desktop frames (1440 × 900):
 ### Figma Design
 
 [Open the TaskMatrix Figma Wireframes](https://www.figma.com/design/PMAHqdULAMywdVpkL8mq2k/Untitled?node-id=0-1&t=AN6jbjWv9Agci5P7-1)
-
-The link is the design source of truth. The frames are UI/UX mockups; controls shown in the designs are not yet connected to a working application.
-
+ 
 ---
 
 # 7. System Architecture
