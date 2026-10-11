@@ -4,9 +4,9 @@
 
 ## Project Overview
 
-TaskMatrix is an enterprise-oriented Agile Project Management application designed to help teams organize projects, manage tasks, collaborate with team members, and monitor project progress through a centralized workspace.
+TaskMatrix is a planning-stage blueprint for an Agile Project Management platform that helps teams organize projects, manage tasks, collaborate with team members, and monitor project progress from one workspace.
 
-The application is planned around a structured Agile workflow for creating projects, assigning tasks, tracking status, managing priorities, and viewing detailed task information.
+This repository documents the product requirements, prioritized MVP scope, four core UI wireframes, proposed system architecture, MongoDB data model, frontend state organization, and REST API contract. **Sprint 13 is a planning and architecture deliverable; the application is not represented as implemented or production-ready.**
 
 ---
 
@@ -199,16 +199,18 @@ Backlog → To Do → In Progress → Review → Done
 
 # 6. UI/UX Wireframes
 
-The Sprint 13 wireframe set contains four core desktop views:
+The Sprint 13 Figma file contains four desktop frames (1440 × 900):
 
-1. Authentication
-2. Dashboard
-3. Project Board
-4. Task Details
+1. **Authentication** — login form and account-creation entry point.
+2. **Dashboard** — project/task summary cards, recent tasks, and project progress.
+3. **Project Board** — five workflow columns: Backlog, To Do, In Progress, Review, and Done.
+4. **Task Details** — task description, status, priority, assignee, due date, labels, comments, and save action.
 
 ### Figma Design
 
 [Open the TaskMatrix Figma Wireframes](https://www.figma.com/design/PMAHqdULAMywdVpkL8mq2k/Untitled?node-id=0-1&t=AN6jbjWv9Agci5P7-1)
+
+The link is the design source of truth. The frames are UI/UX mockups; controls shown in the designs are not yet connected to a working application.
 
 ---
 
@@ -393,18 +395,26 @@ _id, userId, message, type, read, createdAt
 
 # 12. Architecture Documents
 
+The exported diagrams are committed to the repository and embedded above. Use the links below to open each image directly:
+
+- [System Architecture](docs/architecture/system-architecture.drawio.png)
+- [MongoDB Database ERD](docs/architecture/_database-erd.drawio.png)
+- [Zustand Frontend State Tree](docs/architecture/_state-tree.drawio.png)
+- [Wireframe index and Figma link](docs/wireframes/README.md)
+
+Repository layout:
+
 ```text
 docs/
 ├── architecture/
 │   ├── system-architecture.drawio.png
-│   ├── database-erd.drawio.png
-│   └── state-tree.drawio.png
-│
+│   ├── _database-erd.drawio.png
+│   └── _state-tree.drawio.png
 └── wireframes/
     └── README.md
 ```
 
-The diagrams are maintained as exported PNG documentation for the planning phase.
+These are exported PNG assets for the planning deliverable; editable draw.io source files are not currently included.
 
 ---
 
@@ -432,13 +442,14 @@ The diagrams are maintained as exported PNG documentation for the planning phase
 - [x] Project selected — TaskMatrix
 - [x] Repository initialized
 - [x] PRD prepared
-- [x] Figma wireframes planned
+- [x] Figma wireframes designed (four core desktop views)
 - [x] System architecture diagram
 - [x] Database ERD
 - [x] Frontend state tree
 - [x] Mock API endpoint plan
 - [x] MongoDB collection plan
 - [x] Architecture documentation structure
+- [x] README image paths checked against repository filenames
 
 ---
 
@@ -457,6 +468,44 @@ Add analytics, notifications, drag-and-drop workflows, permissions, and real-tim
 Testing, security review, performance optimization, deployment, monitoring, and documentation.
 
 ---
+
+
+# 16. MVP Acceptance Criteria
+
+The following criteria define when the planned P0 MVP should be considered functionally complete. They are acceptance targets, not claims that the features have already been implemented.
+
+| Area | Acceptance criteria |
+| --- | --- |
+| Authentication | A user can register, log in, retrieve their current session, log out, and cannot access protected views while unauthenticated. |
+| Projects | An authorized user can create, view, update, and delete projects; project membership and ownership are enforced by the API. |
+| Tasks | An authorized project member can create, edit, view, and delete tasks and set status, priority, assignee, and due date. |
+| Project Board | Tasks are grouped into Backlog, To Do, In Progress, Review, and Done; changing a task's status persists through the API. |
+| Dashboard | Project/task totals and recent activity are derived from application data rather than hard-coded demo values. |
+| Validation & errors | Invalid input receives a useful validation response; loading, empty, success, and failure states are designed into the UI. |
+| Responsive UI | Core views remain usable on desktop, tablet, and mobile widths; forms and interactive controls have accessible labels and visible focus states. |
+
+# 17. Key Design Decisions and Assumptions
+
+- **Frontend:** React + Vite, JavaScript, Tailwind CSS, React Router, and Zustand.
+- **Backend:** Node.js + Express with a versioned REST API contract at /api.
+- **Database:** MongoDB collections with ObjectId references; related records must be checked for authorization at the API boundary.
+- **Authentication:** Passwords must be stored as secure hashes, never as plain text. Protected API routes must authenticate the request and authorize access to the requested project/task.
+- **API behavior:** Use consistent JSON responses, appropriate HTTP status codes, input validation, and a predictable error shape. The endpoint list in this document is a proposed contract, not a deployed API.
+- **Data ownership:** Users may only read or mutate projects and tasks for which they have the required membership/ownership permissions. The backend remains the source of truth for authorization.
+- **Planning boundary:** No application code, running backend, live database, or deployed product is claimed by this Sprint 13 repository.
+
+# 18. Submission Review Checklist
+
+- [x] Public repository and project overview
+- [x] PRD with target users, problem statement, and P0/P1/P2 feature priorities
+- [x] Tech stack and phased development plan
+- [x] Figma link with four core desktop views
+- [x] System architecture, database ERD, and frontend state-tree exports embedded in this README
+- [x] Proposed REST API endpoints and MongoDB collection design
+- [x] MVP acceptance criteria and key architecture assumptions
+- [x] README image paths match the committed asset filenames
+- [ ] Confirm the Figma file is accessible to the evaluator without requesting access
+- [ ] If the assignment rubric requires an exact repository name, confirm the repository name matches it
 
 ## Project Status
 
